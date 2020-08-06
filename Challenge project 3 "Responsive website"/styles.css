@@ -1,0 +1,326 @@
+body {
+  width: 100%;
+  margin: 0;
+}
+.navigation ul, li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.navigation {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(126, 150, 76);
+  text-align: left;
+  list-style: none;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+h1 {
+  width: 30%;
+  margin-top: 15rem;
+  margin-left: 30rem;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.1rem;
+  /*font-family: 'Permanent Marker', cursive;*/
+  font-family: 'Lobster Two', cursive;
+
+}
+.head {
+  height: 40rem;
+  padding-top: 1rem;
+  background-image: url("media/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-1 {
+  height: 22rem;
+  background-color: rgb(238, 238, 238);
+}
+.line-1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-left: 12rem;
+}
+.line-2 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  padding-left: 15rem;
+}
+.intro-2 {
+  height: 20rem;
+  background-color: rgb(163, 182, 125);
+}
+.line-3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-right: 10rem;
+  text-align: right;
+}
+.line-4 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 2rem;
+  padding-left: 35rem;
+  padding-right: 8rem;
+}
+
+.items{
+  display: grid;
+  height: 30rem;
+  grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+  background-color: rgb(163, 182, 125);
+
+}
+
+.title {
+  height: 5rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.description{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.a, .g {
+  grid-area: 1/2/2/7;
+  padding-top: 2.5rem;
+}
+.b {
+  grid-area: 1/7/6/12;
+  background-image: url("media/matcha.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.4rem solid white;
+  border-radius: 0.3rem;
+}
+.c, .i {
+  grid-area: 2/2/6/6;
+}
+
+.d {
+  grid-area: 1/8/2/12;
+  padding-top: 2.5rem;
+  text-align: left;
+}
+.e {
+  grid-area: 1/2/6/7;
+  background-image: url("media/earlgrey.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.4rem solid white;
+  border-radius: 0.3rem;
+}
+.f {
+  grid-area: 2/8/6/12;
+  text-align: left;
+}
+.h {
+  grid-area: 1/7/6/12;
+  background-image: url("media/oolong.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.4rem solid white;
+  border-radius: 0.3rem;
+}
+
+/* RESPONSIVE FOR TABLET(LANDSCAPE MODE) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  h1 {
+    font-size: 5rem;
+    width: 50%;
+    margin-top: 12rem;
+    margin-left: 15rem;
+  }
+  .head {
+    height: 35rem;
+  }
+  .line-1 {  
+    padding-top: 1rem;
+    padding-left: 4rem;
+    text-align: left;
+  }
+  .line-2 {
+    font-size: 1.2rem;
+    padding-left: 8rem;
+  }
+  .line-3 {
+    padding-top: 1rem;
+    padding-right: 5rem;
+    text-align: right;
+  }
+  .line-4 {
+    text-align: left;
+    padding-left: 20rem;
+    padding-right: 5rem;
+  }
+  
+  .title {
+    height: 1rem;
+    padding-bottom: 3rem;
+    font-size: 2rem;
+  }
+  .b, .e, .h {
+    height: 20rem;
+  }
+  .e {
+    padding-top: 3rem;
+  }
+
+}
+
+/* RESPONSIVE FOR TABLET(PORTRAIT MODE) */
+@media only screen and (min-width: 500px) and (max-width: 768px) and (orientation: portrait) {
+  .navigation li {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-left: 6rem;
+  }
+  h1 {
+    font-size: 4rem;
+    width: 60%;
+    margin-top: 10rem;
+    margin-left: 10rem;
+  }
+  .head {
+    height: 30rem;
+  }
+  .line-1 {  
+    padding-top: 1rem;
+    padding-left: 2rem;
+    text-align: left;
+  }
+  .line-2 {
+    font-size: 1.2rem;
+    padding-left: 5rem;
+  }
+  .line-3 {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    text-align: right;
+  }
+  .line-4 {
+    text-align: left;
+    padding-left: 8rem;
+    padding-right: 2rem;
+  }
+  
+  .items{
+    display: block;
+    height: 45rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+  .description{
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .b, .e, .h {
+    height: 25rem;
+    border: none;
+    border-radius: 0;
+  }
+}
+/* RESPONSIVE FOR MOBILE */
+@media only screen and (max-width: 500px) {
+  .navigation li {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-left: 1.4rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+    width: 70%;
+    margin-top: 10rem;
+    margin-left: 5rem;
+  }
+  .head {
+    height: 25rem;
+  }
+  .line-1 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .line-2 {
+    font-size: 1.1rem;
+    padding-left: 0rem;
+    text-align: center;
+  }
+  .line-3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 0rem;
+    padding-left: 6rem;
+    width: 65%;
+  }
+  .line-4 {
+    width: 90%;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 0rem;
+  }
+  .items{
+    display: block;
+    height: 40rem;
+  }
+  .title {
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .description{
+    font-size: 1.1rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+  .b, .e, .h {
+    height: 20rem;
+    border: none;
+    border-radius: 0;
+  }
+}
