@@ -262,7 +262,7 @@ h1 {
   }
 }
 /* RESPONSIVE FOR MOBILE */
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 480px) {
   .navigation li {
     text-align: center;
     margin: 0 auto;
